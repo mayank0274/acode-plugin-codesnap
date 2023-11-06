@@ -1,0 +1,83 @@
+.codeSnap-main {
+    padding-top: 32px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-variant-ligatures: normal;
+    font-feature-settings:initial;
+    tab-size: 4;
+    user-select: none;
+    width: 100%;
+  }
+
+  #snippet-scroll {
+    max-width: 100%;
+    word-wrap: break-word;
+    margin: auto;
+  }
+
+  #window {
+    display: flex;
+    flex-direction: column;
+    border-radius:4px;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
+    background-color: #010033c7;
+    overflow: hidden;
+    resize: horizontal;
+    width: 900px;
+    min-width: 100px;
+    padding: 18px;
+    width: 100%;
+  }
+  #navbar {
+    overflow: hidden;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  #window-controls {
+    display: flex;
+    float: left;
+    margin-top: 2px;
+  }
+  #window-controls[hidden] {
+    display: none;
+  }
+  #window-title {
+    /* width of window controls (and a bit) so they don't overlap */
+    margin: 0 80px;
+    color: #fff;
+  }
+  #snippet {
+    max-width: 100%;
+    word-break: break-all;
+    color: #fff;
+    white-space: pre-wrap;
+    
+  }
+
+  .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .red {
+    background-color: #ff5f5a;
+  }
+  .yellow {
+    background-color: #ffbe2e;
+  }
+  .green {
+    background-color: #2aca44;
+  }
+  
+  .codeSnap-main pre, .codeSnap-main code{
+    background-color: #010033c7;
+    word-wrap: break-word;
+    width: 100%;
+    white-space: pre-wrap;
+    line-height: 1.6;
+    padding-right: 2px;
+  }
+
+  

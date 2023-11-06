@@ -1,0 +1,35 @@
+{
+  "name": "Code-snap",
+  "version": "1.0.0",
+  "description": "Code snap plugin for acode",
+  "main": "dist/main.js",
+  "scripts": {
+    "start-dev": "node .devServer/start-dev",
+    "build": "webpack",
+    "build-release": "webpack --mode production && node pack-zip.js"
+  },
+  "author": "Mayank",
+  "dependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@types/ace": "^0.0.50",
+    "autoprefixer": "^10.4.16",
+    "babel-loader": "^9.1.0",
+    "dom-to-image": "^2.6.0",
+    "html-tag-js": "^1.1.22",
+    "ip": "^1.1.8",
+    "jszip": "^3.10.1",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "postcss-loader": "^7.3.3",
+    "raw-loader": "^4.0.2",
+    "sass-loader": "^13.3.2"
+  }
+}

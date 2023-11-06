@@ -1,0 +1,16 @@
+{
+  "id": "acode.plugin.codesnap",
+  "name": "Code snap",
+  "main": "dist/main.js",
+  "version": "1.0.0",
+  "readme": "readme.md",
+  "icon": "icon.png",
+  "files": [],
+  "price": 0,
+  "minVersionCode": 290,
+  "author": {
+    "name": "Mayank",
+    "url": "https://portfolioluck.netlify.app",
+    "github": "https://"
+  }
+}
