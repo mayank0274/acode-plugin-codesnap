@@ -1,5 +1,6 @@
 # Code snap
 
+<<<<<<< HEAD
 A simple plugin to take code snaps inside acode editor
 
 <center><img src="https://user-images.githubusercontent.com/113236810/280590261-656d684f-46e1-40f6-b3a9-413b70009d46.png" alt="code_snap" width="90%"></img></center>
@@ -23,3 +24,14 @@ A simple plugin to take code snaps inside acode editor
 # Github repo
 
 https://github.com/mayank0274/acode-plugin-codesnap
+=======
+![Code_snap_286 1](https://github.com/mayank0274/acode-plugin-codesnap/assets/113236810/656d684f-46e1-40f6-b3a9-413b70009d46)
+
+A simple plugin for acode editor to take code snaps
+
+# Usage
+
+![ezgif com-video-to-gif](https://github.com/mayank0274/acode-plugin-codesnap/assets/113236810/c8b094c4-fd6c-4b1d-8840-e576eb8ebc6f)
+
+
+>>>>>>> 0fdafdaaf64c3144c71cf5458a6972b9ef9f28fe
