@@ -1,5 +1,25 @@
 # Code snap
 
-<img src="snap.png" alt="code_snap" width="95vw">
+A simple plugin to take code snaps inside acode editor
 
-A simple plugin to take code snaps
+<center><img src="https://user-images.githubusercontent.com/113236810/280590261-656d684f-46e1-40f6-b3a9-413b70009d46.png" alt="code_snap" width="90%"></img></center>
+
+# Latest update `v 1.0.1`
+
+-> Add functionality of editing editor-name (i.e you can edit name of heading of image just click on default text `code editor` to edit it)
+
+-> Bug fixes
+
+# Usage
+
+-> Select code you want to make snap
+
+-> click on 📸 camera icon in selection menu
+
+-> A page will open with preview cilck on 💾 icon , file browser will open select the folder where you want to save image
+
+<center><img src="https://user-images.githubusercontent.com/113236810/280590178-c8b094c4-fd6c-4b1d-8840-e576eb8ebc6f.gif" alt="usage"  width="90%"></img></center>
+
+# Github repo
+
+https://github.com/mayank0274/acode-plugin-codesnap

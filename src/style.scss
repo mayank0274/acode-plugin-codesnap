@@ -21,13 +21,13 @@
     flex-direction: column;
     border-radius:4px;
     box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
-    background-color: #010033c7;
+    background-color: #010033;
     overflow: hidden;
-    resize: horizontal;
     width: 900px;
     min-width: 100px;
     padding: 18px;
     width: 100%;
+    min-width: 100%;
   }
   #navbar {
     overflow: hidden;
@@ -72,7 +72,7 @@
   }
   
   .codeSnap-main pre, .codeSnap-main code{
-    background-color: #010033c7;
+    background-color: #010033;
     word-wrap: break-word;
     width: 100%;
     white-space: pre-wrap;

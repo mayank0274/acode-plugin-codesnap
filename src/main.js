@@ -79,7 +79,7 @@ class CodeSnap {
                 <div class="yellow dot"></div>
                 <div class="green dot"></div>
               </div>
-              <div id="window-title">Code editor</div>
+              <div id="window-title" contenteditable="true">Code editor</div>
             </div>
             <div id="snippet">
             <pre class="hljs codesArea"><code>${
@@ -95,10 +95,11 @@ class CodeSnap {
     this.$page.show();
   }
 
-  saveCodeSnap() {
-    const main = document.querySelector(".codeSnap-main");
-
-    domtoimage.toBlob(main).then(async function (blob) {
+  async saveCodeSnap() {
+    try {
+      const main = document.querySelector(".codeSnap-main");
+      const blob = await domtoimage.toBlob(main);
+      console.log(blob);
       const fileViewer = await fileBrowser(
         "folder",
         "Select location to save file",
@@ -106,15 +107,13 @@ class CodeSnap {
       );
       const url = fileViewer.url;
 
-      try {
-        const name = `Code_snap_${Math.floor(Math.random() * 1000)}.png`;
-        const file = await fs(url).createFile(name, blob);
-        self.hide();
-        window.toast("Image saved sucessfully!!", 2000);
-      } catch (error) {
-        alert(error.message);
-      }
-    });
+      const name = `Code_snap_${Math.floor(Math.random() * 1000)}.png`;
+      const file = await fs(url).createFile(name, blob);
+      self.hide();
+      window.toast("Image saved sucessfully!!", 2000);
+    } catch (error) {
+      alert(error.message);
+    }
   }
 
   async destroy() {}
