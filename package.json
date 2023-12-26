@@ -1,6 +1,6 @@
 {
-  "name": "Code-snap",
-  "version": "1.0.1",
+  "name": "Code-snap test",
+  "version": "2.0",
   "description": "Code snap plugin for acode",
   "main": "dist/main.js",
   "scripts": {
