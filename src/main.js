@@ -96,26 +96,34 @@ class CodeSnap {
   }
 
   async saveCodeSnap() {
-    try {
-      const main = document.querySelector(".codeSnap-main");
-      const blob = await domtoimage.toBlob(main);
-      console.log(blob);
-      const fileViewer = await fileBrowser(
-        "folder",
-        "Select location to save file",
-        true
-      );
-      const url = fileViewer.url;
+		try {
+			const main = document.querySelector(".codeSnap-main");
+			const blob = await domtoimage.toBlob(main);
 
-      const name = `Code_snap_${Math.floor(Math.random() * 1000)}.png`;
-      const file = await fs(url).createFile(name, blob);
-      self.hide();
-      window.toast("Image saved sucessfully!!", 2000);
-    } catch (error) {
-      alert(error.message);
-    }
-  }
+			/* Create a FormData object to send the blob correctly */
+			const formData = new FormData();
+			formData.append("file", blob, "Code_snap.png");
 
+			const fileViewer = await fileBrowser(
+				"folder",
+				"Select location to save file",
+				true,
+			);
+			const url = fileViewer.url;
+
+			/* Uses the fetch method to send blobs */
+			await fetch(`${url}/Code_snap.png`, {
+				method: "POST",
+				body: formData,
+			});
+
+			self.hide();
+			window.toast("Image saved successfully!!", 2000);
+		} catch (error) {
+			console.error(error);
+			alert(error.message);
+		}
+	}
   async destroy() {}
 }
 
