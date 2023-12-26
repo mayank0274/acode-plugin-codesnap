@@ -1,8 +1,8 @@
 {
-  "id": "acode.plugin.code_snap",
-  "name": "Code snap",
+  "id": "acode.plugin.code_snap_test",
+  "name": "Code snap test",
   "main": "dist/main.js",
-  "version": "1.0.1",
+  "version": "2.0",
   "readme": "readme.md",
   "icon": "icon.png",
   "files": [],
