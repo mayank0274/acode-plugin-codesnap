@@ -21,7 +21,7 @@
     border-radius: 5px;
     background-color:#A4B1BA;
     min-width: 100px;
-    padding: 25px;
+    padding: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,11 +36,9 @@
     box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
     background-color: #0D1117;
     overflow: hidden;
-    width: 900px;
+    width: auto;
     min-width: 100px;
     padding: 18px;
-    width: 100%;
-    min-width: 100%;
   }
   #navbar {
     overflow: hidden;
