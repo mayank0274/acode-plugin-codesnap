@@ -1,6 +1,6 @@
 {
   "name": "Code-snap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Code snap plugin for acode",
   "main": "dist/main.js",
   "scripts": {
@@ -17,8 +17,9 @@
     "@types/ace": "^0.0.50",
     "autoprefixer": "^10.4.16",
     "babel-loader": "^9.1.0",
-    "dom-to-image": "^2.6.0",
+    "blob-util": "^2.0.2",
     "html-tag-js": "^1.1.22",
+    "html2canvas": "^1.4.1",
     "ip": "^1.1.8",
     "jszip": "^3.10.1",
     "live-server": "^1.2.2",

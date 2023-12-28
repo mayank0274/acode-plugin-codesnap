@@ -1,8 +1,8 @@
 {
   "id": "acode.plugin.code_snap",
-  "name": "Code snap",
+  "name": "Code Snap 📸",
   "main": "dist/main.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "readme": "readme.md",
   "icon": "icon.png",
   "files": [],
