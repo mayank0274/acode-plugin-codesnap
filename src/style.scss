@@ -1,13 +1,14 @@
 .codeSnap-main {
-    padding-top: 32px;
+    padding: 20px;
     display: flex;
     flex-flow: column;
+    justify-content: center;
     align-items: center;
     font-variant-ligatures: normal;
     font-feature-settings:initial;
     tab-size: 4;
     user-select: none;
-    width: 100%;
+    width: auto;
   }
 
   #snippet-scroll {
@@ -15,13 +16,25 @@
     word-wrap: break-word;
     margin: auto;
   }
+  
+  #bgWindow {
+    border-radius: 5px;
+    background-color:#A4B1BA;
+    min-width: 100px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
 
   #window {
     display: flex;
     flex-direction: column;
-    border-radius:4px;
+    border-radius:5px;
     box-shadow: rgba(0, 0, 0, 0.55) 0px 20px 68px;
-    background-color: #010033;
+    background-color: #0D1117;
     overflow: hidden;
     width: 900px;
     min-width: 100px;
@@ -71,11 +84,11 @@
   }
   
   .codeSnap-main pre, .codeSnap-main code{
+    background-color: transparent;
     word-wrap: break-word;
-    width: 100%;
+    width: auto;
     white-space: pre-wrap;
     line-height: 1.6;
-    padding-right: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
-
-  
